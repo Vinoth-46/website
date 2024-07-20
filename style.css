@@ -84,13 +84,6 @@ button.white {
     align-items:wrap;
   
 }
-#mobile{
-    display:none;
-    align-items: center;
-}
-#close{
-    display: none;
-}
 #navbar li {
     display: contents;
     padding: 10px;
@@ -104,7 +97,6 @@ button.white {
 }
 
 #navbar li a {
-    text-decoration: none;
     color: #000;
     padding: 10px 15px;
     display: inline-block;
@@ -115,6 +107,21 @@ button.white {
     color: #fff;
     background-color: #0458b3;
     border-radius: 5px;
+}
+#mobile{
+    display:none;
+    align-items: center;
+}
+#close{
+    display: none;
+    
+}
+#navbar.active #close {
+    display: inline-block;
+}
+
+#navbar.active #Bag {
+    display: none;
 }
 
 #header {
@@ -548,6 +555,9 @@ footer a:hover{
 }
 
 @media (max-width: 799px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
     #navbar {
         display: flex;
         flex-direction: column;
@@ -583,7 +593,7 @@ footer a:hover{
         cursor: pointer; 
     }
     #close {
-        display: initial;
+        display:none;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -593,6 +603,24 @@ footer a:hover{
     }
     #lg-bag{
         display: none;
+    }
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+        
     } 
-}
-
+    
+        #feature {
+         justify-content: space-between;
+        }
+        #feature .fe-box {
+            margin: 15PX 15PX;
+        }
+        #product1 .pro-container{
+            justify-content: center;
+        }
+        #product1 .pro{
+            margin: 15px;
+        }
+    }
