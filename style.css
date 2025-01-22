@@ -78,7 +78,9 @@ button.white {
     height: auto;
     vertical-align: middle;
 }
-
+#navbar.#close{
+   display:none;
+}
 #navbar {
     display:center;
     align-items:wrap;
